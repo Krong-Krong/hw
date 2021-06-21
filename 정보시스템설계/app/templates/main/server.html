@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <h1> Server 관리자 페이지 </h1><br>
+</head>
+
+<body>
+
+  <form method = "POST">
+         <p>조회할 매칭코드를 입력해주세요 (M____): <input type = "text" name = "매칭코드" /></p>
+         <p>조회할 ID 입력해주세요 (남자: 1____, 여자: 2____): <input type = "text" name = "ID" /></p>
+         <p><input type = "submit" value = "저장"" /> <input type="button" value="초기화" onclick="location.href='/server'"> </p>
+  </form>
+
+
+
+  <div>
+    <p>조회 중인 매칭코드 : {{matching_code}}</p>
+    <p>조회 중인 ID : {{id}}</p>
+  </div>
+
+
+
+  <br><br>
+
+  <input type="button" value="A커플의 남자가 과거 연애에서 어떤 상품을 구매 했는 가?" onclick="location.href='/server/select4'">
+  <input type="button" value="현재 커플로 사귀고 있는 커플이 몇 쌍인가?" onclick="location.href='/server/select5'">
+  <input type="button" value="B 남자는 어떤 스타일의 여성을 만나기를 원하는 가?" onclick="location.href='/server/select6'">
+  <input type="button" value="현재 매칭 되었던 사람들은 총 몇 쌍인가?" onclick="location.href='/server/select7'">
+  <br><br>
+  <input type="button" value="A커플의 여자가 과거 연애에서 어떤 상품을 구매 했는 가?" onclick="location.href='/server/select100'">
+  <input type="button" value="현재까지 각각의 남성별 매칭 횟수" onclick="location.href='/server/select99'">
+  <input type="button" value="현재까지 각각의 여성별 매칭 횟수" onclick="location.href='/server/select98'">
+  <input type="button" value="C 여자는 어떤 스타일의 남성을 만나기를 원하는 가?" onclick="location.href='/server/select97'">
+  <br><br>
+  <input type="button" value="현재 등록된 판매자와 판매자의 연락처는?" onclick="location.href='/server/select96'">
+  <input type="button" value="현재 등록된 상품과 가격은?" onclick="location.href='/server/select95'">
+
+  <br><br><br>
+
+  <div>
+      result  : {{resultData | safe}}
+  </div>
+  <br>
+
+</body>
+</html>

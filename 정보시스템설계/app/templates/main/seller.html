@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <h1> Seller 페이지 </h1><br>
+</head>
+
+<body>
+
+  <form method = "POST">
+    <p>판매자 ID를 입력해주세요 (판매자: 5____) <input type = "text" name = "이름" /> <input type = "submit" value = "확인" /> <input type="button" value="초기화" onclick="location.href='/seller'"> </p>
+
+  </form>
+
+  <div>
+    나의 판매자 ID : {{result}}
+  </div>
+
+
+  <br><br>
+  <input type="button" value="현재 나의 평점은 몇 점인가? " onclick="location.href='/seller/select8'">
+  <br><br>
+  <input type="button" value="현재 내가 판매중인 상품은? " onclick="location.href='/seller/select1000'">
+
+
+  <br><br><br>
+
+  <div>
+      result  : {{resultData | safe}}
+  </div>
+  <br>
+
+</body>
+</html>

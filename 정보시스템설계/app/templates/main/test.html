@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <h1> head Test </h1><br>
+</head>
+
+<body>
+
+  <input type="button" value="나와 만날 이성의 스타일은 어떤 가?" onclick="location.href='/test/select1'">
+  <input type="button" value="나와 그 (혹은 그녀)가 언제부터 사귀기 시작 했는 가?" onclick="location.href='/test/select2'">
+  <input type="button" value="내가 이번에 새로 구매한 상품의 판매자 평점은 몇 점인가?" onclick="location.href='/test/select3'">
+
+  <input type="button" value="A커플의 남자가 과거 연애에서 어떤 상품을 구매 했는 가?" onclick="location.href='/test/select4'">
+  <input type="button" value="현재 커플로 사귀고 있는 커플이 몇 쌍인가?" onclick="location.href='/test/select5'">
+  <input type="button" value="B 남자는 어떤 스타일의 여성을 만나기를 원하는 가?" onclick="location.href='/test/select6'">
+  <input type="button" value="현재 매칭 되었던 사람들은 총 몇 쌍인가?" onclick="location.href='/test/select7'">
+
+  <input type="button" value="현재 나의 평점은 몇 점인가? " onclick="location.href='/test/select8'">
+
+
+  <br><br><br>
+
+  <div>
+      result  : {{resultData | safe}}
+  </div>
+  <br>
+
+</body>
+</html>
